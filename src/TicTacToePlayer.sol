@@ -3,8 +3,8 @@ pragma solidity 0.8.13;
 import "./interfaces/ITicTacToeGame.sol";
 import "./core/BasePlayer.sol";
 
+///@notice
 contract TicTacToePlayer is BasePlayer {
-    
     ITicTacToeGame public game;
     constructor() BasePlayer() {}
 
@@ -23,10 +23,7 @@ contract TicTacToePlayer is BasePlayer {
         returns (bytes memory output)
     {
         if (game.useCurrentGrid()) {
-            Coords memory coords = game.getCurrentGridCoords();
-            Grid memory grid = game.getCurrentGrid();
-            Coords memory move_ = _getMove(coords, grid);
-            return abi.encode(move_);
+            return abi.encode(_getMove(game.getCurrentGridCoords(), game.getCurrentGrid()));
         } else {
             Grid memory globalGrid = game.getGlobalGrid();
             for (uint256 globalX = 0; globalX < 3; ++globalX) {

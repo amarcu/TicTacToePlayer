@@ -10,3 +10,5 @@ update          :; forge update
 # Build & test
 build           :; forge build
 clean           :; forge clean
+
+bytecode		:; python3 ./script/GetBytecode.py -c TicTacToePlayer
