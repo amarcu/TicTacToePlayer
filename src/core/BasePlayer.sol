@@ -17,5 +17,5 @@ abstract contract BasePlayer {
         isInitialized = true;
     }
 
-    function move() external view virtual returns (bytes memory output);
+    function move(bytes memory input) external view virtual returns (bytes memory output);
 }
