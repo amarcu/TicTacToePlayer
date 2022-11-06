@@ -24,9 +24,12 @@ make build
 
 The starter project comes with a demo solidity player implementation [./src/TicTacToePlayer.sol](https://github.com/amarcu/TicTacToePlayer/blob/master/src/TicTacToePlayer.sol)
 
-To compile and retrieve the `bytecode` needed the submission run:
+To compile and retrieve the `bytecode` needed for the submission run:
 ```
 make bytecode
+Bytecode successfully generated and copied to the clipboard:
+
+ 0x60806...
 ```
 
 The bytecode will be printed as output and also automatically copied to the clipboard.
