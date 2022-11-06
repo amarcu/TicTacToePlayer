@@ -10,6 +10,7 @@ This repo is a simple starter project for competing in the TicTacToe smart contr
 
 ```
 git clone https://github.com/amarcu/TicTacToePlayer
+cd TicTacToePlayer/
 ```
 
 Install dependencies by running this command:
