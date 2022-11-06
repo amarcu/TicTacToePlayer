@@ -3,7 +3,7 @@
 -include .env
 
 # Update dependencies
-install         :; forge install
+install         :; pip install tk; forge install
 update          :; forge update
 
 
