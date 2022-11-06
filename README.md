@@ -6,19 +6,22 @@ This repo is a simple starter project for competing in the TicTacToe smart contr
 
 **Python3** and **pip** need to be installed, a nice guide on python installation can be found [here](https://docs.python-guide.org/starting/installation/)
 
+## Getting started
 
+```
+git clone https://github.com/amarcu/TicTacToePlayer
+```
 
 Install dependencies by running this command:
 ```
 make install
 ```
 
-## Getting started
-
+Build the project:
 ```
-git clone https://github.com/amarcu/TicTacToePlayer
 make build
 ```
+
 
 The starter project comes with a demo solidity player implementation [./src/TicTacToePlayer.sol](https://github.com/amarcu/TicTacToePlayer/blob/master/src/TicTacToePlayer.sol)
 
