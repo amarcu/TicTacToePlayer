@@ -2,9 +2,9 @@
 This repo is a simple starter project for competing in the TicTacToe smart contract challenge found [here](https://amarcu.dev).
 
 ## Setup
-*Foundry* is needed and can be installed by following the steps [here](https://github.com/foundry-rs/foundry#installation).
+**Foundry** is needed and can be installed by following the steps [here](https://github.com/foundry-rs/foundry#installation).
 
-*Python3 and pip* need to be installed, a nice guide on python installation can be found [here](https://docs.python-guide.org/starting/installation/)
+**Python3** and **pip** need to be installed, a nice guide on python installation can be found [here](https://docs.python-guide.org/starting/installation/)
 
 
 
