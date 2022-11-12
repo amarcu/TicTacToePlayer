@@ -3,18 +3,6 @@ import sys
 import json
 from argparse import ArgumentParser
 
-# clipboard tool
-from tkinter import Tk
-
-def copyToClipboard(text):
-    r = Tk()
-    r.withdraw()
-    r.clipboard_clear()
-    r.clipboard_append(text)
-    r.update() # now it stays on the clipboard after the window is closed
-    r.destroy()
-
-
 def main(contractName):
     run_command = "forge build"
     p = subprocess.Popen(run_command, stdout=subprocess.PIPE, shell=True)
@@ -31,9 +19,7 @@ def main(contractName):
 
     bytecode = outJson["bytecode"]["object"]
 
-    copyToClipboard(bytecode)
-
-    print ("Bytecode successfully generated and copied to the clipboard:\n\n " + bytecode)
+    print ("Bytecode successfully generated:\n\n " + bytecode)
 
 if __name__=="__main__":
     parser = ArgumentParser()
